@@ -6,5 +6,5 @@ npm install
 # 2. Launch the tests
 npm run testWatch
 
-# The test file is fake.test.js
+# The test file is fake.test.ts
 ```
