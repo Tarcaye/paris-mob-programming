@@ -3,6 +3,14 @@ test("Fake poker hands test", () => {
 });
 
 
+function isTie() {
+	return true;
+}
+
 test("on donne 2 cartes on dit que c'est égal", () => {
-	expect(tipi()).toBe(true);
+	expect(isTie()).toBe(true);
+})
+
+test("2on donne 2 cartes on dit que c'est égal", () => {
+	expect(isTie("AS","2D")).toBe(false);
 })
