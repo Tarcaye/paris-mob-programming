@@ -5,6 +5,7 @@ function isTie(first: string, second: string) {
     return first[0] === second[0];
 }
 
+
 describe("tie", () => {
     test("yes for 2 cards with the same value", () => {
         expect(isTie("AS", "AD")).toBe(true);
