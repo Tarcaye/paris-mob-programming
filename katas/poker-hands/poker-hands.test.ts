@@ -3,12 +3,12 @@ function isTie(first: string, second: string) {
   return true;
 }
 
-describe("", () => {
-  test("tie for 2 cards with the same value", () => {
+describe("tie", () => {
+  test("yes for 2 cards with the same value", () => {
     expect(isTie("AS", "AD")).toBe(true);
   });
 
-  test("", () => {
+  test("no for 2 cards with different values", () => {
     expect(isTie("AS", "2D")).toBe(false);
   });
 });
