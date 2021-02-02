@@ -1,6 +1,6 @@
 function isTie(first: string, second: string) {
-  if (second === "2D") return false;
-  return true;
+  if(first[2]) return false;
+  return first[0] === second[0];
 }
 
 describe("tie", () => {
@@ -11,4 +11,9 @@ describe("tie", () => {
   test("no for 2 cards with different values", () => {
     expect(isTie("AS", "2D")).toBe(false);
   });
+
+  test("2no for 2 cards with different values", () => {
+    expect(isTie("AS AD", "AH 2S")).toBe(false);
+  });
+
 });
